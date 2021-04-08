@@ -1,0 +1,177 @@
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polina's Personal Site</title>
+  <meta-description="This is Polina's personal website to practise web development and share ideas.">
+
+    <style>
+      
+      html {
+        box-sizing: border-box;
+        background-image: linear-gradient(to right, #d8ebe4, #eeac9e);
+        text-align: center;
+      }
+      
+      table {
+        cellspacing: 20px;
+        margin: auto;
+      }
+
+      .portrait {
+        width: 200px;
+        margin: 40px;
+        border-color: #e9896a;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50px 15px;
+      }
+
+      h1 {
+        color: #e9896a;
+        font-family: "Raleway", Garamond;
+        font-size: 50px;
+        font-weight: bold;
+        background: linear-gradient(#e9896a, #387c6d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        font-family: garamond;
+        font-size: 25px;
+        font-style: italic;       
+        color: #146352; /*#387c6d;*/
+        text-align: center;
+      }
+
+      h3 {
+        color: #146352;
+        font-family: Gill Sans;
+        font-size: 20px;
+        text-align: justify;
+        margin-left: 280px;
+        margin-right: 280px;
+        line-height: 40px;
+      }
+      
+      h4 {
+        font-size: 20px; 
+        font-style: italic;
+      }
+      
+      a:link {
+        color: #C84127;
+      }
+      
+      a:visited {
+        color: #C84127;
+      }
+      
+      a:hover {
+       color: orange;
+      }
+      
+      fieldset {
+        font-size: 40px;
+        margin: auto;
+        width: 600px;
+        text-align: center;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 35%;
+        border-color: #e9896a;
+        background-color: #eeac9e;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+
+      .radio {
+        margin: 20px;
+        color: yellow;
+      }
+      
+      #game-title {
+        margin-left: 170px; 
+        margin-right: 130px;
+      }
+      
+      .game-question {
+        width: 410px;
+        font-family: "Raleway";
+        font-size: 20px;
+      }
+      
+      #q1 {
+        background-color: #AFD275;
+      }
+      
+      #q2 {
+        background-color: #65CCB8;
+      }
+      
+      #q3 {
+        background-color: #FFE400;
+      }
+      
+      
+      #footer {
+        text-align: center;
+        align-items: center;
+        padding-top: 60px;
+        margin-bottom: 80px;
+      }
+      
+    </style>
+</head>
+
+<body>
+  <header>
+    <table>
+      <tr>
+        <td>
+          <img class="portrait" src="https://imgur.com/Ru3Dqn0.jpg" alt="Polina at the piano">
+        </td>
+        <td>
+          <h1>POLINA MOORE</h1>
+          <h2>Pianist and Teacher<br>learning <a href="https://github.com/Poligera">Web Development</a>,<br>dabbling in
+            <a href="https://www.codewars.com/users/Poligera">Codewars</a>
+          </h2>
+        </td>
+        <td><img style="border-radius:15px 50px;" class="portrait" src="https://imgur.com/47AZ1sR.jpg" alt="Polina by the Thames"></td>
+      </tr>
+    </table>
+  </header>
+  <main>
+      <section>
+          <p><h3>I grew up and studied music in Russia before moving to England at age 24. I am so glad to be here! Russians are not known for their smiliness, which often made me feel like an alien! &#129315 I love exploring Britain's fascinating heritage and beautiful nature. Cornwall and Scotland provide endless inspiration for holidays, while London is by far my most favourite city in the world! Luckily, it offers copious amounts of sushi, coffee and musical events! I would class myself as an eternal optimist and a lifelong learner, probably due to being a teacher and a collaborative musician for years .</h3></p><br>
+    <p><h2>Click on the <a href="#footer">links below</a> to find out about my interests, skillset and how to get in touch.<br>Otherwise, lets <a href="#game-title">play a game!</a> </h2>😉</p>
+      </section>
+      <section>
+          <form>
+              <fieldset>
+                  <header>
+                    <h3 id="game-title">"TWO TRUTHS AND ONE LIE"</h3>
+                  </header>
+              <h4 style="margin-left:30px;">Choose a could-be LIE:</h4>
+              <input type="radio" class="radio" name="radio" onclick="alert('WRONG! 🤣')">
+               <input class="game-question" id="q1" type="text" value=" I drink two triple-strength flat whites daily">
+                <br><input type="radio" class="radio" name="radio" onclick="alert('WRONG! 🤣')">
+                <input class = "game-question" id="q2" type="text" value=" I chatted to a GOT actor in a coffee shop">
+                <br><input type="radio" class="radio" name="radio" onclick="alert('CORRECT! 🥳')">
+                <input  class="game-question" id="q3" type="text"  value=" I have never been camping">
+        </fieldset>
+      </form></p>
+  <footer>
+    <h3 id="footer"><a href="hobbies.html">My Hobbies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="my-skills.html">My Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="contact_me.html">Contact Me</a></h3>
+  </footer>
+</body>
+
+</html>
